@@ -2,5 +2,5 @@ from operations import *
 a=int(input())
 b=int(input())
 s=input()
-print(chisla.razdeli(a,b))
-print(stroki.rev(s))
+print(ch.razdeli(a,b))
+print(str.rev(s))
