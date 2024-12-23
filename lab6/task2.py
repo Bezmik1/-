@@ -16,7 +16,7 @@ class Car(Vehicle):
     def get_info(self):
         print("Марка: {} Модель: {} Топливо: {}".format(self.make, self.model, self.fuel_type))
 
-benz = Vehicle("Mercedes", "Benz Truck")
-benz.get_info()
-bmw = Car("BMW","M5 F90","ДВС")
-bmw.get_info()
+toplivo = Vehicle("Merc", "GLS")
+toplivo.get_info()
+porshe = Car("Porshee","M5 F90","Дизель")
+porshe.get_info()
