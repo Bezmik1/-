@@ -1,8 +1,8 @@
 class Book:
 
-    title = "Kuroko no Basuke"
-    author = "Tadatoshi Fujimaki"
-    year = 2014
+    title = "War and world"
+    author = "Alexey Tolstoy"
+    year = 1815
 
     def get_info(self):
         print("Название книги: {}, Автор: {}, Год издания: {}".format(self.__class__.title,self.__class__.author,self.__class__.year))
