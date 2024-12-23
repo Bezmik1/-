@@ -12,5 +12,5 @@ def Screen(file, type):
             f = open(file,'r')
             print(f.read())
         except FileNotFoundError:
-            print("не нашёл :(")
+            print("потерял или не нашёл :(")
 Screen('examphle.txt', 'all')
