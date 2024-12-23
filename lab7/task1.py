@@ -23,7 +23,7 @@ class Technician(Employee):
         super().__init__(name, id)
 
     def perform_maintenance(self):
-        return("Техник {} выполняет техническое обслуживание.".format(self.name))
+        return("Техник {} производит техническое обслуживание.".format(self.name))
 
 class TechManager(Manager, Technician):
 
@@ -40,22 +40,22 @@ class TechManager(Manager, Technician):
 
     @classmethod
     def get_team_info(cls):
-        print("Наша команда:")
+        print("Тима:")
         for member in cls.team_info:
             print("Имя: {} ID: {}".format(member.name,member.id))
 
-emp1 = Employee("Алиса", 1)
-emp2 = Employee("Андрей", 2)
-manager = Manager("Максим", 3, "Продажи")
-technician = Technician("Ваня", 4, "Электрик")
-tech_manager = TechManager("Егор", 5, "IT-разработка", "Специалист по машинному обучению")
+emp1 = Employee("Маша", 1)
+emp2 = Employee("Иван", 2)
+manager = Manager("Миша", 3, "Продажиии")
+technician = Technician("Егор", 4, "Электрик воу воу")
+tech_manager = TechManager("Андрей", 5, "IT-разработка", "Специалист по машинному обучению")
 
 print(emp1.get_info())
 print(emp2.get_info())
 print(manager.get_info())
 print(technician.get_info())
 
-print(manager.manage_project("Повышение Продаж"))
+print(manager.manage_project("Увелечение товарооборота"))
 print(technician.perform_maintenance())
 
 tech_manager.add_employee(emp1)
