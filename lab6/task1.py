@@ -14,7 +14,7 @@ class UserAccount():
         else:
             return False
 
-andrey = UserAccount("Andrey", "123@gmail.com", "qwerty123")
-andrey.set_password("lol123")
-print(andrey.check_password("qwerty123"))
-print(andrey.check_password("lol123"))
+bezmik = UserAccount("Ivan", "99@inbox.ru", "basketball12345")
+bezmik.set_password("oo11")
+print(bezmik.check_password("basketball12345"))
+print(bezmik.check_password("oo11"))
